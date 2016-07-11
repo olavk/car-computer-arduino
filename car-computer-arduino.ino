@@ -86,7 +86,7 @@ void loop() {
   // getState
   if (Serial.available() > 0) {
     incomingByte = Serial.read();
-    if (incomingByte == 50) {
+    if (incomingByte == 50) { // "2" key
       Serial.print('B'); Serial.print(buttonVal, DEC); Serial.print(';');
       Serial.print('S'); Serial.println(sFinal, DEC);
     }
